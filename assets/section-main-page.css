@@ -1,0 +1,110 @@
+.page-title {
+  margin-top: 0;
+}
+
+h1.main-page-title {
+    font-size: 2em;
+}
+
+.main-page-title {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  .main-page-title {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.page-placeholder-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.page-placeholder {
+  width: 52.5rem;
+  height: 52.5rem;
+}
+
+.order-lookup {
+  min-height: 700px;
+}
+
+#hide-title {
+    text-align: center;
+}
+
+.order-lookup input#ola_submitButton {
+    background-color: #2e2e2e;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+@media screen and (min-width: 990px) {
+  #MainContent.text-us {
+    min-height: 687px;
+}
+#MainContent.text-us h1 {
+    font-size: 50px;
+    margin-top: 35px;
+}
+#MainContent.text-us h2.description-text.cw-description-text {
+    margin-bottom: 40px;
+}
+}
+
+@media screen and (max-width: 989px) {
+  .smsb-subscribe-button-holder {
+    margin-top: 13px !important;
+}
+    #MainContent.text-us {
+    min-height: 550px;
+}
+#MainContent.text-us h1 {
+    font-size: 30px;
+}
+#MainContent.text-us h2.description-text.cw-description-text {
+    margin-bottom: 30px;
+  font-size: 14px !important;
+}
+}
+
+#MainContent.text-us h1 {
+    font-weight: 700;
+}
+
+#MainContent.text-us .sms-policy-text.cw-compliance-text {
+    font-size: 12px!important;
+    line-height: 16px!important;
+    max-width: 420px;
+    margin: 32px auto 0;
+    text-align: justify;
+}
+
+#MainContent.text-us .form-renderer {
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+#MainContent.text-us span#smsb-button-field-subscribe {
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+#MainContent.text-us .smsb-subscribe-button.cw-btn.cw-btn-primary.cw-btn-block.cw-btn-primary {
+    height: 55px !important;
+    align-items: center;
+}
+
+#MainContent.text-us input.phone-field.cw-form-control {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 300 !important;
+    color: #aaaaaa !important;
+    padding: 10px !important;
+}
+
+#MainContent.text-us .sc-vxbem9-0.iualZL {
+    padding: 0;
+}

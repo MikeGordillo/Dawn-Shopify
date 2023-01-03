@@ -1,0 +1,105 @@
+.collection-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.collection-list-title {
+  margin: 0;
+}
+
+@media screen and (max-width: 749px) {
+  ul.collection-list .card__content {
+    padding: 1rem 0 0;
+}
+  .collection-list-wrapper slider-component {
+    padding-left: 10px;
+}
+    ul.collection-list.grid--peek.slider .grid__item:first-of-type {
+    margin-left: 0;
+}
+  .collection-list:not(.slider) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section-collection-list .page-width {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .section-collection-list .collection-list:not(.slider) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+.collection-list__item:only-child {
+  max-width: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 749px) {
+  .slider.collection-list--1-items {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .slider.collection-list--1-items,
+  .slider.collection-list--2-items,
+  .slider.collection-list--3-items,
+  .slider.collection-list--4-items {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  ul.collection-list.grid {
+    column-gap: var(--grid-mobile-horizontal-spacing);
+    justify-content: space-between;
+}
+  .collection-list__item a:hover {
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .collection-list.slider .collection-list__item {
+    max-width: 100%;
+  }
+}
+
+.collection-list-view-all {
+  margin-top: 2rem;
+}
+
+.collection-list-wrapper li.grid__item {
+    height: auto;
+}
+
+ul.collection-list .card__information a {
+    text-decoration: underline;
+}
+
+ul.collection-list .card__content {
+    padding: 1rem 0 3.45rem;
+}
+
+.collection-list h3.card__heading {
+    margin-top: 0.5rem;
+}
+
+span.collection-gender {
+    font-size: .875em;
+    color: #909090;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media (min-width: 751px) and (max-width: 1399px) {
+.section-template--15672514150596__164700345823a18eb0-padding {
+    padding-top: 40px !important;
+    padding-bottom: 30px !important;
+}
+}

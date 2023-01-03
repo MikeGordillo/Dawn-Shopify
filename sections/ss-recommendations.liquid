@@ -1,0 +1,64 @@
+{% if section.settings.profileId == 'category-trending-pdp' and template contains 'product' %}
+  {%- if collection.id and template contains 'product' -%}
+  	{% capture ss_options_config %}
+      options = {
+        categories : ["{{ collection.id }}"]
+      };
+  	{% endcapture %}
+  {%- else -%}
+  	{% capture ss_options_config %}
+      options = {
+        categories: ["279052714180"]
+      }
+  	{% endcapture %}
+  {% endif %}
+{% endif %}
+
+<div
+  data-section-type="ss-recommendations"
+  data-section-id="{{ section.id }}"
+  {% if section.settings.wrapperClass %}
+    class={{ section.settings.wrapperClass }}
+  {% endif %}
+>
+  <script type="searchspring/personalized-recommendations" profile="{{ section.settings.profileId }}">
+    {% if section.settings.profileId != 'view-cart' and section.settings.profileId != 'category-trending-pdp' %}
+      seed = "{{ product.variants[0].sku }}";
+    {% endif %}
+    {% if section.settings.profileId == 'category-trending-pdp' and template contains 'product' %}
+      {{ ss_options_config }}
+    {% else %}
+      {% if section.settings.profileId == 'category-trending-pdp' %}
+        {{ ss_options_config }}
+      {% endif %}
+    {% endif %}
+  </script>
+</div>
+
+{% schema %}
+{
+  "name": "SS Recommendations",
+  "class": "searchspring-recommendations",
+  "presets": [
+    {
+      "category": "{{ section.settings.category }}",
+      "name": "SS Recommendations"
+    }
+  ],
+  "settings": [
+    {
+      "type": "text",
+      "id": "profileId",
+      "label": "Searchspring Recommendations Profile Id",
+      "default": "home",
+      "info": "This profileId can be found in the Searchspring Management Console"
+    },
+    {
+      "type": "text",
+      "id": "wrapperClass",
+      "label": "Add a class to the carousel wrapper",
+      "info": "This can be used to add custom classes to the container wrapping the recommendations carousel."
+    }
+  ]
+}
+{% endschema %}

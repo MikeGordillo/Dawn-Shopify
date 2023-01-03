@@ -1,0 +1,195 @@
+
+
+
+@media screen and (max-width: 749px) {
+  .featured-collection .card-wrapper {
+    margin-bottom: 25px;
+}
+  .section-template--15672514379972__16564318431dc8a810-padding,
+  .section-template--15672514412740__16564310254490e8b1-padding {
+    padding-top: 36px;
+    padding-bottom: 63px;
+}
+  .section-template--15672514379972__1656431528d9817560-padding,
+  .section-template--15672514412740__165643069448cb7cc7-padding {
+    padding-top: 30px;
+  }
+  .collection .grid__item:only-child {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  #shopify-section-template--15672514379972__1656432016399900bc .collection .slider.slider--tablet,
+  #shopify-section-template--15672514412740__1656431196a5a355ff .collection .slider.slider--tablet {
+    margin-bottom: 80px;
+  }
+  .collection .slider.slider--tablet {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.collection .loading-overlay {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  padding: 0 1.5rem;
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 750px) {
+  .collection .loading-overlay {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+.collection.loading .loading-overlay {
+  display: block;
+}
+
+.collection--empty .title-wrapper {
+  margin-top: 10rem;
+  margin-bottom: 15rem;
+}
+
+@media screen and (max-width: 989px) {
+  .collection .slider--tablet.product-grid {
+    scroll-padding-left: 1.5rem;
+  }
+}
+
+.collection__description > * {
+  margin: 0;
+}
+
+.collection__title.title-wrapper {
+  margin-bottom: 2.5rem;
+}
+
+.collection__title .title:not(:only-child) {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 990px) {
+  .collection__title--desktop-slider .title {
+    margin-bottom: 2.5rem;
+  }
+
+  .collection__title.title-wrapper--self-padded-tablet-down {
+    padding: 0;
+  }
+
+  .collection slider-component:not(.page-width-desktop) {
+    padding: 0;
+  }
+
+  .collection--full-width slider-component:not(.slider-component-desktop) {
+    padding: 0 1.5rem;
+    max-width: none;
+  }
+}
+
+.collection__view-all a:not(.link) {
+  margin-top: 1rem;
+}
+
+span.bestseller-overhang {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: inherit;
+  display:none!important;
+}
+span.desktop-badge 
+    margin-top:574px!important;
+    width: 89.6%!important;
+    font-weight: 600;
+    position: absolute;
+    padding: 12px;
+    text-transform: uppercase;
+    font-family: Roboto;
+    text-align: center;
+    color: #0a0a0a;
+    font-size: 16px;
+    background: rgba(255,255,255,.58);
+    backdrop-filter: blur(15.3px);
+    -webkit-backdrop-filter: blur(15.3px);
+}
+
+span.new-overhang span.desktop-badge {
+    width: 58px;
+    height: 30px;
+    padding: 7px 12.5px;
+    line-height: initial;
+    background-color: #ffffff;
+    color: #000;
+    font-weight: 500;
+    font-size: 12px;
+}
+@media screen and (max-width: 500px)  {
+ span.new-overhang span.desktop-badge {
+    width: 43px;
+    height: 24px;
+    padding: 7px 12.5px;
+    line-height: initial;
+    background-color: #fff;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold!important;
+}
+}
+
+span.new-overhang {
+    position: absolute;
+    z-index: 1;
+}
+.collection__title h2 {
+    font-weight: 600;
+    color: #2e2e2e;
+    letter-spacing: 0;
+    font-size: 1.5em;
+}
+
+.featured-collection .card-information .price {
+    display: none;
+}
+
+span.desktop-badge.back-in-stock {
+    bottom: 0;
+}
+
+@media (min-width: 749px) and (max-width: 1350px) {
+  .collection .card-wrapper {
+    padding-bottom: 20px;
+}
+.section-template--15672514379972__1656432016399900bc-padding, .section-template--15672514412740__1656431196a5a355ff-padding {
+    padding-top: 50px !important;
+}
+            .section-template--15672514379972__1656431528d9817560-padding,
+  .section-template--15672514412740__165643069448cb7cc7-padding {
+    padding-top: 34px !important;
+    padding-bottom: 30px !important;
+}
+        .section-template--15672514379972__16564318431dc8a810-padding,
+  .section-template--15672514412740__16564310254490e8b1-padding {
+    padding-top: 35px !important;
+    padding-bottom: 10px !important;
+}
+}
+
+.cart-collection .collection__view-all {
+    display: none;
+}
+
+#searchspring-content li.ss__result.grid__item.ss__result--item {
+    padding-bottom: 30px;
+}
+
+.ss__theme .ss__results .ss__result .ss__variants {
+    column-gap: 4px;
+}
