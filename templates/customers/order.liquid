@@ -1,0 +1,87 @@
+{{ 'customer.css' | asset_url | stylesheet_tag }}
+
+<div class="page-width page-content">
+
+  {% if settings.show_breadcrumbs %}
+  <nav class="breadcrumb" role="navigation" aria-label="breadcrumbs">
+    <a href="{{ routes.account_url }}">{{ 'customer.account.title' | t }}</a>
+    <span class="divider" aria-hidden="true">/</span>
+    {{ 'customer.orders.title' | t }}
+  </nav>
+  {% endif %}
+
+  <header class="section-header">
+    <h1 class="section-header__title">{{ 'customer.order.title' | t: name: order.name }}</h1>
+  </header>
+
+  <div class="order-customer">
+
+      <p>
+        {%- assign order_date = order.created_at | time_tag: format: "date_at_time" -%}
+        <span class="date">{{ 'customer.order.date_html' | t: date: order_date }}</span>
+      </p>
+
+      {% if order.cancelled %}
+      <div class="errors">
+        {%- assign cancelled_at = order.cancelled_at | time_tag: format: "date_at_time" -%}
+        <p class="h5">{{ 'customer.order.cancelled_html' | t: date: cancelled_at }}</p>
+        <p>{{ 'customer.order.cancelled_reason' | t: reason: order.cancel_reason }}</p>
+      </div>
+      {% endif %}
+
+      <p style="font-weight:500">{{ 'customer.order.payment_status' | t }}</p><p>{{ order.financial_status_label }}</p>
+      <p style="font-weight:500">{{ 'customer.order.fulfillment_status' | t }}</p><p>{{ order.fulfillment_status_label }}</p>
+
+      <p style="font-weight:500">{{ 'customer.order.shipping_address' | t }}</p>
+
+      <p>
+        {{ order.shipping_address.name }}<br>
+        {% if order.shipping_address.company != blank %}
+        {{ order.shipping_address.company }}<br>
+        {% endif %}
+        {{ order.shipping_address.street }}<br>
+        {{ order.shipping_address.city }}<br>
+        {% if order.shipping_address.province != blank %}
+        {{ order.shipping_address.province }}<br>
+        {% endif %}
+        {{ order.shipping_address.zip | upcase }}<br>
+        {{ order.shipping_address.country }}<br>
+        {{ order.shipping_address.phone }}
+      </p>
+
+      <div class="full table--responsive">
+        {% for line_item in order.line_items %}      
+<div id="{{ line_item.key }}" class="order-line-item table__section">
+<div class="line-item-container">            
+<div class="line-item-product-title">{{ line_item.product.title | link_to: line_item.product.url }}</div>
+<div class="order-line-item-grid">          
+<div class="order-line-item-img">
+<a href="{{ line_item.product.url }}">{{ line_item.image | image_url: width: 110, height: auto | image_tag: srcset: nil }}</a>
+</div>
+<div class="order-line-item-details">       
+<p>Size: {{ line_item.variant.options[0] }}</p>
+          <p>Color: {{ line_item.variant.options[1] }}</p>
+          {% if line_item.line_level_discount_allocations != blank %}
+          {% for discount_allocation in line_item.line_level_discount_allocations %}
+          <p class="cart__discount">
+            {{ discount_allocation.discount_application.title }} (-{{ discount_allocation.amount | money }})
+          </p>
+          {% endfor %}
+          {% endif %}
+          <div data-label="{{ 'customer.order.quantity' | t }}">QTY: {{ line_item.quantity }}</div>
+</div>
+          <div class="order-line-item-price">
+            {% if line_item.original_line_price != line_item.final_line_price %}
+            <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
+            <span class="cart__price cart__price--strikethrough">{{ line_item.original_line_price | money }}</span>
+            <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
+            <span class="cart__discount">{{ line_item.final_line_price | money }}</span>
+            {% else %}
+            {{ line_item.original_line_price | money }}
+            {% endif %}
+          </div></div></div>
+        {% endfor %}
+        </div></div>
+    </div>
+
+</div>

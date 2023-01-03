@@ -1,0 +1,1666 @@
+<link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-search.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-menu-drawer.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-cart-notification.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<noscript>{{ 'component-list-menu.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-search.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-menu-drawer.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>
+
+<style>
+.carousel.menu-nav .flickity-viewport {
+    height: 245px !important;
+}
+  .menu-drawer__menu-item {
+    padding: 1rem 3rem;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+.menu-drawer__navigation {
+    padding: 0 0 2.6rem 0;
+}
+  .a {
+    padding-bottom: 22px;
+  }
+  
+  img#flaf {
+    margin-right: 9px;
+}
+  #menu-drawer .localization-selector.link {
+    background-color: #ffffff;
+    margin:0px;
+}
+    
+.extra-items {
+    display: grid;
+    margin-left: 24px;
+}
+  summary.menu-drawer__menu-item.list-menu__item.link.link--text.focus-inset {
+    height: 71px;
+    margin: 0px;
+    border-bottom: 1px solid rgb(214, 217, 220);
+
+}
+  ul.menu-drawer__menu.list-menu li a {
+    color: #2e2e2e;
+    text-decoration: none;
+}
+ 
+  svg.icon.icon-cart {
+    width: 16px;
+}
+  header-drawer {
+    justify-self: start;
+  }
+
+  @media screen and (min-width: 990px) {
+    header-drawer {
+      display: none;
+    }
+  }
+
+  .menu-drawer-container {
+    display: flex;
+  }
+
+  .list-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .list-menu--inline {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  summary.list-menu__item {
+    padding: 0 24px;
+  }
+
+  .list-menu__item {
+    display: flex;
+    align-items: center;
+    line-height: 1.3;
+  }
+  
+  .list-menu--inline {
+    display: table;
+    margin: 0 auto;
+}
+  
+  ul.list-menu.list-menu--inline li {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+  .list-menu__item--link {
+    text-decoration: none;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    line-height: 1.8;
+  }
+
+  @media screen and (min-width: 750px) {
+    .list-menu__item--link {
+      padding-bottom: 0.5rem;
+      padding-top: 0.5rem;
+    }
+  }
+    @media screen and (max-width: 749px) {
+  sticky-header.header-wrapper {
+    padding-top: 0.2rem;
+}
+    }
+  
+  /* Mobile Menu Css */
+.css-14cxo8a {
+    background: center center / cover no-repeat rgb(244, 244, 244);
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+}
+.css-1q0mskh {
+    display: block;
+    opacity: 1;
+    animation: 0.3s ease-out 0s 1 normal forwards running animation-5f1q21;
+}
+details#Details-menu-drawer-submenu-\ bottom-line {
+    height: 71px;
+    margin: 0px;
+    border-bottom: 1px solid rgb(214, 217, 220);
+}
+a.menu-drawer__menu-item.link.link--text.list-menu__item.focus-inset {
+    margin: 0px;
+}
+
+.css-nwk9gm {
+    margin-right: 16px;
+    height: 108px;
+    width: 88px;
+    overflow: hidden;
+    background-color: rgb(235, 237, 238);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+  .blockDisp {
+  display:flex;
+  justify-content:center;
+  margin-top:2em;  
+  }
+  
+/*Flickity*/
+.carousel.menu-nav button.flickity-button {
+    display: none;
+}
+.carousel.menu-nav ol.flickity-page-dots {
+    display: none;
+}
+.carousel.menu-nav .carousel-cell-column {
+  height: 200px;
+  margin-right: 10px;
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel.menu-nav .carousel-cell-column img {
+  display: block;
+  height: 200px;
+}
+
+@media screen and ( min-width: 768px ) {
+.carousel.menu-nav .carousel-cell-column img {
+  height: 200px;
+  }
+}
+  
+
+  img.icon.icon-arrow2 {
+    height: 18px!important;
+    width: 18px!important;
+}
+.carousel.menu-nav .carousel-cell-column img {
+    display: block;
+    height: 200px;
+    width: auto;
+}
+.carousel.menu-nav .flickity-viewport .flickity-viewport {
+      height: 240px!important;
+
+  }
+  
+   .el {
+        display: inline-block;
+        width: 136px;
+        overflow: hidden;
+      }
+  svg#Layer_1  {
+    margin-right: 1em;
+    height:14px;
+    width:14px;
+}
+  
+img.\<flecha {
+    margin-bottom: 1em;
+  
+}
+    .flecha{
+      margin-left: 12.3em;
+}
+  img.flecha {
+    width: 14px;
+    height: 14px;
+}
+   img.flecha2 {
+    width: 14px;
+    height: 14px;
+     margin-left: 10.2em
+}
+ .gtg {
+    margin-left: 1.7em;
+    font-size: large;
+}
+  button.menu-drawer__close-button.link.link--text.focus-inset {
+    position: relative;
+    margin-top: 0px;
+}
+  img#gua {
+    width: 14px;
+    height: 14px;
+    margin-left: 15.5em;
+}
+   img#gua3 {
+    width: 14px;
+    height: 14px;
+    margin-left: 13em;
+}
+  img#gua4 {
+    height: 14px;
+    width: 14px;
+    margin-left: 11.5em;
+}
+  .woa {
+    font-size: large;
+        font-weight: 500;
+
+}
+   .woa1 {
+     font-size: large;
+         font-weight: 500;
+
+   }
+   .woa2 {
+     font-size: large;
+         font-weight: 500;
+
+   }
+img#colFix {
+    margin-left: 9.1em;
+    width: 14px;
+    height: 14px;
+
+}
+  img#colFix2 {
+    margin-left: 10.5em;
+    width: 14px;
+    height: 14px;
+}
+img#col3 {
+    height: 14px;
+    width: 14px;
+    margin-left: 12.5em;
+}
+ul#\31 {
+    height: 71px;
+    margin: 0px;
+    border-bottom: 1px solid rgb(214,217,220);
+}
+  ul#\32 {
+    height: 71px;
+    margin: 0px;
+    border-bottom: 1px solid rgb(214,217,220);
+}
+  ul#\33 {
+    height: 71px;
+    margin: 0px;
+    border-bottom: 1px solid rgb(214,217,220);
+}
+  ul#\34 {
+    height: 71px;
+    margin: 0px;
+    border-bottom: 1px solid rgb(214,217,220);
+}
+  img#col4 {
+    width: 14px;
+    height: 14px;
+    margin-left: 10.7em;
+
+}
+  img#guaToo {
+    width: 14px;
+    height: 14px;
+    margin-left: 13em;
+}
+
+  summary.menu-drawer__menu-item.list-menu__item.link.link--text.focus-inset {
+}
+  .pipo{
+   width: 14px!important;
+   height: 14px!important;
+  }
+  
+  .a{
+  text-decoration:none;
+  color:black;  
+  }
+  
+  {
+  padding:2.2em;
+  }
+  #222{
+  padding:2.2em;
+  }
+  img#man {
+    margin-right: 12px;
+}
+  
+    a.header__heading-link {
+    z-index: 1;
+}
+  
+  #show {
+    z-index: auto;
+}
+ 
+</style>
+
+
+<script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
+
+<svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+  <symbol id="icon-search" viewbox="0 0 18 18" fill="none">
+    <path d="M12.5 11H11.71L11.43 10.73C12.41 9.59 13 8.11 13 6.5C13 2.91 10.09 0 6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C8.11 13 9.59 12.41 10.73 11.43L11 11.71V12.5L16 17.49L17.49 16L12.5 11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 8.99 8.99 11 6.5 11Z" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="icon-close" class="icon icon-close" fill="none" viewBox="0 0 18 17">
+    <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
+  </symbol>
+</svg>
+<{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
+  <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}">
+    {%- if section.settings.menu != blank -%}
+      <header-drawer data-breakpoint="tablet">
+        <details class="menu-drawer-container">
+          <summary class="header__icon header__icon--menu header__icon--summary link link--text focus-inset" aria-label="{{ 'sections.header.menu' | t }}">
+            <span>
+            
+              {% render 'hamburger-icon-dawn' %}
+
+            </span>
+          </summary>
+          <div id="menu-drawer" class="menu-drawer motion-reduce" tabindex="-1">
+            
+          <summary class="header__icon header__icon--menu header__icon--summary link link--text focus-inset back-to-all" aria-label="{{ 'sections.header.menu' | t }}">
+
+          </summary>
+            <div class="menu-drawer__inner-container">
+
+              <div class="menu-drawer__navigation-container">
+                <div class="new-close-wrapper"> {% render 'icon-close' %} </div>
+                <nav class="menu-drawer__navigation">
+               <ul class="menu-drawer__menu list-menu" role="list">
+    <li>
+    
+    <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">
+      <summary id="222" class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.child_active %} menu-drawer__menu-item--active{% endif %}">
+
+        Men
+        {% render 'icon-arrowFix3' %}
+      </summary>
+     
+         
+         
+    <div id="link-{{ link.title | escape }}" class="menu-drawer__submenu motion-reduce" tabindex="-1">
+        <div class="menu-drawer__inner-submenu">
+          <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
+          {% render 'icon-caret3' %}
+            Back to all
+          </button>
+          
+      <ul id="1" class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+           <li class="bottom-line">
+    
+             <button  class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
+               <div class="woa">Men</div>
+                             {% render 'icon-arrow3' %}
+                              </button>       
+                          </li>
+        
+          </ul>
+      
+      
+      
+          <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+           <li class="bottom-line">
+                            <a href="/collections/all-products/mens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                              All Products
+                            </a>
+                          </li>
+            
+             <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+                        <li class="bottom-line">
+                            <a href="/collections/new-releases/mens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                             
+                              New releases
+                            </a>
+                          </li>
+                          <li class="bottom-line">
+                            <a href="/collections/best-sellers/mens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                             
+                              Best sellers
+                            </a>
+                          </li>
+                          <li>
+                            <a href="/collections/mens-trending-must-haves" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                              
+                              Trending Must Haves
+                            </a>
+                          </li>
+<!--                           <li class="bottom-line">
+                            <a href="/collections/all-products/mens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                              
+                              Seen on social
+                            </a>
+                          </li> -->
+                          <li>
+                            <a href="/collections/outlet/mens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                              
+                              5/$75 Blowout sale
+                            </a>
+                          </li>
+<!--                           <li>
+                            <a href="/collections/hats" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                             
+                              Accessories
+                            </a>
+                          </li> -->
+                       
+                          <li>
+                            <a href="/products/tlf-gift-card" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                             
+                              E-Gift card
+                            </a>
+                          </li>
+                      </ul>
+            
+            <br>
+    
+            
+<!--     <div class="carousel menu-nav" data-flickity='{ "wrapAround": true }'>
+      
+      <div class="carousel-cell-column">
+       <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/vital-air-flex-tlf-drop-arm-tank-men-tank-tops-sleeveless-tlf-black-s-478253_200x.jpg?v=1644358526">
+        <span class="el"> Shop all mens</span>
+      </div>
+      
+      <div class="carousel-cell-column">
+     <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/vital-fleece-pullover-hoodie-men-hoodies-sweatshirts-jackets-tlf-turbulence-s-208395_200x.jpg?v=1644419801">
+        <span class="el">New releases</span>
+      </div>
+      <div class="carousel-cell-column">
+     <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/flex-stringer-bamboo-tank-men-tank-tops-sleeveless-tlf-brick-s-604831_200x.jpg?v=1629913977">
+        <span class="el">Best sellers</span>
+      </div>
+      <div class="carousel-cell-column">
+    <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/vital-element-7-workout-shorts-men-shorts-tlf-996288_200x.jpg?v=1649111825">
+       <span class="el">Trending must haves</span>  
+      </div>
+      <div class="carousel-cell-column">
+     <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/league-workout-joggers-men-joggers-pants-tlf-black-s-795123_200x.jpg?v=1621921678">
+       <span class="el">Seen on social</span>
+      </div>
+       <div class="carousel-cell-column">
+     <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/surge-34-sleeve-training-t-shirt-men-long-sleeves-tlf-148776_200x.jpg?v=1598624654">
+       <span class="el">Overstock / Blowout sales</span>
+      </div>
+       <div class="carousel-cell-column">
+     <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/29005-TLF-Original-Hat-Black-FRONT-1000x1500_200x.jpg?v=1580514304">
+       <span class="el">Accessories</span>
+      </div>
+       <div class="carousel-cell-column">
+     <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/e-gift-card-gift-card-tlf-2500-613557_200x.jpg?v=1640286969">
+       <span class="el">E-Gift card</span>
+      </div>
+    </div> -->
+            
+            
+            
+                     
+              <li>
+            
+                <details id="Details-menu-drawer-submenu-{{ forloop.index }} bottom-line">
+                  <summary class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                   <a href="/collections/tops/mens">
+                  Tops
+                    </a>
+                    {% render 'icon-arrow2' %}
+                  </summary>
+                  <div id="childlink-{{ childlink.title | escape }}" class="menu-drawer__submenu motion-reduce">
+                    <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
+                      {% render 'icon-caret3' %}
+                      Back to all
+                    </button>
+                    
+                  
+               <ul id="2" class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+           <li class="bottom-line">
+    
+             <button  class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
+               <div class="woa">Tops</div>
+                             {% render 'icon-arrow3' %}
+                              </button>       
+                          </li>
+        
+          </ul>
+                    
+                    <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+                      
+                       
+                        
+                        <li>
+                          <a href="/collections/short-sleeves/mens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                           
+                           Short Sleeves
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/collections/long-sleeves/mens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                           
+                            Long Sleeves
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/collections/tank-tops-sleeveless/mens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                          
+                            Tanks & Sleeveless
+                          </a>
+                        </li>
+                       <li>
+                          <a href="/collections/hoodies-sweatshirts-jackets/mens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                           
+                            Hoodies, Sweatshirts & Jackets
+                          </a>
+                        </li>
+                       <li>
+                          <a href="/collections/stringers/mens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                            
+                            Stringers & Drop Arm Tanks
+                          </a>
+                        </li>
+                      <li>
+                       <a href="/collections/graphic-t-shirts/mens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                           
+                            Graphic t's
+                   
+                         </a>
+                      </li>
+    
+                  </ul>
+                    <br>
+                    
+<!--     <div class="carousel menu-nav" data-flickity='{ "wrapAround": true }'>
+       <div class="carousel-cell-column">
+       <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/vital-gym-sweatshirt-men-hoodies-sweatshirts-jackets-tlf-black-s-501686_200x.jpg?v=1644504083">
+        Sort sleeves
+      </div>
+      
+      <div class="carousel-cell-column">
+     <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/vital-fleece-pullover-hoodie-men-hoodies-sweatshirts-jackets-tlf-turbulence-s-208395_200x.jpg?v=1644419801">
+        <span class="el">Long sleeves</span>
+      </div>
+      <div class="carousel-cell-column">
+     <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/legend-ri-bamboo-stringer-tank-men-tank-tops-sleeveless-tlf-lakeshore-s-479058_200x.jpg?v=1645650602">
+        <span class="el">Tank tops & sleeveless</span>
+      </div>
+      <div class="carousel-cell-column">
+    <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/infi-dry-surge-training-zip-up-jacket-men-hoodies-sweatshirts-jackets-tlf-179224_200x.jpg?v=1600805248">
+       <span class="el">Hoodies-sweatshirts & jackets</span>  
+      </div>
+      <div class="carousel-cell-column">
+     <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/flex-stringer-bamboo-tank-men-tank-tops-sleeveless-tlf-847940_200x.jpg?v=1633130923">
+       <span class="el">Stringers & drop arm tanks</span>
+      </div>
+       <div class="carousel-cell-column">
+     <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/motion-gym-t-shirt-men-short-sleeves-tlf-black-s-437047_720x.jpg?v=1629913951">
+       <span class="el">Graphic t's</span>
+      </div>
+    </div> -->
+                </div>
+              </details>
+        
+          </li>
+            
+          <li>
+            
+                <details id="Details-menu-drawer-submenu-{{ forloop.index }} bottom-line">
+                  <summary class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                   <a href="/collections/tops/mens">
+                  Bottoms
+                    </a>
+                    {% render 'icon-arrowFix2' %}
+                  </summary>
+                  <div id="childlink-{{ childlink.title | escape }}" class="menu-drawer__submenu motion-reduce">
+                    <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
+                      {% render 'icon-caret3' %}
+                      Back to all
+                    </button>
+                    
+                  
+               <ul id="4" class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+           <li class="bottom-line">
+    
+             <button  class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
+               <div class="woa2">Bottoms</div>
+                             {% render 'arrow-fix3' %}
+                              </button>       
+                          </li>
+        
+          </ul>
+                <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+                  
+                    <li>
+                      <a href="/collections/shorts/mens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                       
+                       Shorts
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/collections/joggers-pants/mens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                        
+                        Joggers & Sweatpants
+                      </a>
+                    </li>
+                
+                    <li>
+                      <a href="/collections/leggings-tights/mens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                        
+                        Leggings (Base Layers)
+                      </a>
+                    </li>
+                   
+               
+                </ul>
+                <br>
+<!--     <div class="carousel menu-nav" data-flickity='{ "wrapAround": true }'>
+       <div class="carousel-cell-column">
+     <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/vital-element-7-workout-shorts-men-shorts-tlf-996288_200x.jpg?v=1649111825">
+        <span class="el">Shorts</span>
+      </div>
+      <div class="carousel-cell-column">
+     <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/vital-element-workout-joggers-men-joggers-pants-tlf-910779_200x.jpg?v=1647655802">
+        <span class="el">Joggers & sweatpants</span>
+      </div>
+      <div class="carousel-cell-column">
+    <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/tlf-train-gym-leggings-men-bottoms-men-leggings-tlf-black-s-685065_200x.jpg?v=1600272004">
+       <span class="el">Base layers & leggings</span>  
+      </div>
+    </div> -->
+              </div>
+            </details>
+      
+        </li>
+           <li>
+            
+                <details id="Details-menu-drawer-submenu-{{ forloop.index }} bottom-line">
+                  <summary class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                   <a href="/collections/tops/mens">
+                  Collections
+                    </a>
+                     {% render 'icon-arrowFix' %}
+                  </summary>
+                  <div id="childlink-{{ childlink.title | escape }}" class="menu-drawer__submenu motion-reduce">
+                    <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
+                       {% render 'icon-caret3' %}
+                      Back to all
+                    </button>
+                    
+                  
+               <ul id="3" class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+           <li class="bottom-line">
+    
+             <button  class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
+               <div class="woa2">Collections</div>
+                             {% render 'arrow-fix4' %}
+                              </button>       
+                          </li>
+        
+          </ul>
+                  <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+                    
+                      <li>
+                        <a href="/collections/vital/mens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                         
+                          Vital
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/collections/lift/mens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                         
+                          Lift
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/collections/league/mens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                          
+                          League
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/collections/element/mens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                          
+                         Element
+                        </a>
+                      </li>
+                     <li>
+                        <a href="/collections/core/mens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                          
+                         Core
+                        </a>
+                      </li>
+                     <li>
+                        <a href="/collections/graphix/mens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                          
+                         Graphix
+                        </a>
+                      </li>
+                    </ul>
+                    <br>
+<!--     <div class="carousel menu-nav" data-flickity='{ "wrapAround": true }'>
+      <div class="carousel-cell-column">
+       <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/vital-element-workout-joggers-men-joggers-pants-tlf-910779_200x.jpg?v=1647655802">
+        <span class="el">Vital</span>
+      </div>
+      <div class="carousel-cell-column">
+     <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/legend-train-bamboo-stringer-tank-men-tank-tops-sleeveless-tlf-olive-s-259110_200x.jpg?v=1644445691">
+        <span class="el">Lift</span>
+      </div>
+      <div class="carousel-cell-column">
+    <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/league-workout-joggers-men-joggers-pants-tlf-black-s-795123_200x.jpg?v=1621921678">
+       <span class="el">League</span>  
+      </div>
+      <div class="carousel-cell-column">
+     <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/vital-element-workout-joggers-men-joggers-pants-tlf-769605_200x.jpg?v=1647655812">
+       <span class="el">Element</span>
+      </div>
+       <div class="carousel-cell-column">
+     <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/element-air-flex-gym-joggers-20-men-joggers-pants-tlf-turbulence-s-849982_200x.jpg?v=1626209007">
+       <span class="el">Core</span>
+      </div>
+       <div class="carousel-cell-column">
+     <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/motion-gym-t-shirt-men-short-sleeves-tlf-black-s-437047_200x.jpg?v=1629913951">
+       <span class="el">Graphix</span>
+      </div>
+    </div> -->
+                  
+                </div>
+              </details>
+        
+          </li>
+      
+      
+    
+    
+    
+          
+          </ul>
+        </div>
+      </div>
+    </details>
+    </li>
+
+<ul class="menu-drawer__menu list-menu" role="list">
+<li>
+
+<details id="Details-menu-drawer-menu-item-{{ forloop.index }}">
+  <summary id="222" class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.child_active %} menu-drawer__menu-item--active{% endif %}">
+   
+    Women
+    {% render 'icon-arrowFix4' %}
+  </summary>
+  <div id="link-{{ link.title | escape }}" class="menu-drawer__submenu motion-reduce" tabindex="-1">
+    <div class="menu-drawer__inner-submenu">
+      <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
+      {% render 'icon-caret3' %}
+        Back to all
+      </button>
+      
+  <ul id="1" class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+       <li class="bottom-line">
+
+         <button  class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
+           <div class="woa">Women</div>
+                         {% render 'icon-arrow5' %}
+                          </button>       
+                      </li>
+    
+      </ul>
+      
+      
+     
+      <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+       <li class="bottom-line">
+                        <a href="/collections/all-products/womens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                         
+                          All Products
+                        </a>
+                      </li>
+        
+         <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+                    <li class="bottom-line">
+                        <a href="/collections/new-releases/womens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                         
+                          New releases
+                        </a>
+                      </li>
+                      <li class="bottom-line">
+                        <a href="/collections/best-sellers/womens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                         
+                          Best sellers
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/collections/womens-trending-must-haves" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                          
+                          Trending Must Haves
+                        </a>
+                      </li>
+<!--                       <li class="bottom-line">
+                        <a href="/collections/all-products/womens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                          
+                          Seen on social
+                        </a>
+                      </li> -->
+                      <li>
+                        <a href="/collections/outlet/womens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                          
+                          5/$75 / Blowout sales
+                        </a>
+                      </li>
+<!--                       <li>
+                        <a href="/collections/hats" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                         
+                          Accessories
+                        </a>
+                      </li> -->
+                   
+                      <li>
+                        <a href="/products/tlf-gift-card" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                         
+                          E-Gift card
+                        </a>
+                      </li>
+                  </ul>
+        
+        <br>
+        
+<!-- <div class="carousel menu-nav" data-flickity='{ "wrapAround": true }'>
+  
+   <div class="carousel-cell-column">
+   <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/contour-halter-sports-bra-women-sports-bras-tlf-midnight-blue-xs-773056_200x.jpg?v=1648136855">
+    Shop all Women
+  </div>
+  
+  <div class="carousel-cell-column">
+ <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/train-long-sleeve-crop-tee-women-crop-tops-tlf-black-xs-816397_200x.jpg?v=1650063825">
+    <span class="el">New releases</span>
+  </div>
+  <div class="carousel-cell-column">
+ <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/contour-high-waisted-scrunch-shorts-women-shorts-tlf-midnight-blue-xs-967797_200x.jpg?v=1648151059">
+    <span class="el">Best sellers</span>
+  </div>
+  <div class="carousel-cell-column">
+<img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/tempo-workout-sports-bra-women-sports-bras-tlf-671739_200x.jpg?v=1615852458">
+   <span class="el">Trending must haves</span>  
+  </div>
+  <div class="carousel-cell-column">
+ <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/contour-high-waisted-scrunch-leggings-women-leggings-tights-tlf-517604_200x.jpg?v=1648071866">
+   <span class="el">Seen on social</span>
+  </div>
+   <div class="carousel-cell-column">
+ <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/genesis-gym-crop-top-women-crop-tops-tlf-dusky-orchid-xs-302148_200x.jpg?v=1624328694">
+   <span class="el">Overstock / Blowout sales</span>
+  </div>
+   <div class="carousel-cell-column">
+ <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/29005-TLF-Original-Hat-Black-FRONT-1000x1500_200x.jpg?v=1580514304">
+   <span class="el">Accessories</span>
+  </div>
+   <div class="carousel-cell-column">
+ <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/e-gift-card-gift-card-tlf-2500-613557_200x.jpg?v=1640286969">
+   <span class="el">E-Gift card</span>
+  </div>
+</div> -->
+    
+            <li>
+        
+            <details id="Details-menu-drawer-submenu-{{ forloop.index }} bottom-line">
+              <summary class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+               <a href="/collections/tops/womens">
+              Tops
+                </a>
+                {% render 'icon-arrow2' %}
+              </summary>
+              <div id="childlink-{{ childlink.title | escape }}" class="menu-drawer__submenu motion-reduce">
+                <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
+                  {% render 'icon-caret3' %}
+                  Back to all
+                </button>
+                
+              
+           <ul id="2" class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+       <li class="bottom-line">
+
+         <button  class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
+           <div class="woa">Tops</div>
+                         {% render 'icon-arrow3' %}
+                          </button>       
+                      </li>
+    
+      </ul>
+                
+                <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+                  
+                   
+                    
+                    <li>
+                      <a href="/collections/sports-bras/womens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                        
+                       Sports Bras
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/collections/crop-tops/womens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                        
+                        Crop Tops
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/collections/short-sleeves/womens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                        
+                        Short Sleeves
+                      </a>
+                    </li>
+                   <li>
+                      <a href="/collections/long-sleeves/womens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                       
+                        Long Sleeves
+                      </a>
+                    </li>
+                   <li>
+                      <a href="/collections/tank-tops-sleeveless/womens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                        
+                        Tanks & sleeveless
+                      </a>
+                    </li>
+                  <li>
+                   <a href="/collections/hoodies-sweatshirts-jackets/womens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                       
+                        Hoodies, Sweatshirts & Jackets
+               
+                     </a>
+                  </li>
+
+              </ul>
+                   <br>
+        
+<!-- <div class="carousel menu-nav" data-flickity='{ "wrapAround": true }'>
+  <div class="carousel-cell-column">
+   <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/contour-racerback-sports-bra-women-sports-bras-tlf-black-xs-174994_200x.jpg?v=1648071963">
+  <span class="el">Sports bras</span>
+  </div>
+  <div class="carousel-cell-column">
+ <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/chill-fleece-oversized-crop-sweatshirt-women-hoodies-sweatshirts-jackets-tlf-white-xs-679217_200x.jpg?v=1648049243">
+    <span class="el">Crop tops</span>
+  </div>
+  <div class="carousel-cell-column">
+ <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/emerge-short-sleeve-crop-top-women-crop-tops-tlf-peach-xs-267739_200x.jpg?v=1600108078">
+    <span class="el">Short sleeves</span>
+ </div>
+  <div class="carousel-cell-column">
+<img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/chill-fleece-oversized-crop-sweatshirt-women-hoodies-sweatshirts-jackets-tlf-dk-berry-xs-327234_200x.jpg?v=1648049272">
+    <span class="el">Long sleeves</span>
+ </div>
+  <div class="carousel-cell-column">
+ <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/genesis-gym-crop-top-women-crop-tops-tlf-hot-coral-xs-421685_200x.jpg?v=1624328833">
+    <span class="el">Tank tops & sleeveless</span>
+ </div>
+   <div class="carousel-cell-column">
+ <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/ease-zip-up-jacket-women-hoodies-sweatshirts-jackets-tlf-980483_200x.jpg?v=1603997242">
+    <span class="el">Hoodies-sweatshirts & jackets</span>
+
+</div> -->
+        
+        
+        
+            </div>
+          </details>
+    
+      </li>
+                <li>
+        
+            <details id="Details-menu-drawer-submenu-{{ forloop.index }} bottom-line">
+              <summary class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+               <a href="/collections/bottoms/womens">
+              Bottoms
+                </a>
+                {% render 'icon-arrowFix2' %}
+              </summary>
+              <div id="childlink-{{ childlink.title | escape }}" class="menu-drawer__submenu motion-reduce">
+                <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
+                  {% render 'icon-caret3' %}
+                  Back to all
+                </button>
+                
+              
+           <ul id="4" class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+       <li class="bottom-line">
+
+         <button  class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
+           <div class="woa2">Bottoms</div>
+                         {% render 'arrow-fix3' %}
+                          </button>       
+                      </li>
+    
+      </ul>
+            <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+              
+                <li>
+                  <a href="/collections/shorts/womens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                    
+                   Shorts
+                  </a>
+                </li>
+                <li>
+                  <a href="/collections/leggings-tights/womens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                    
+                    Leggings
+                  </a>
+                </li>
+            
+                <li>
+                  <a href="/collections/joggers-pants/womens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                    
+                    Joggers & Sweatpants
+                  </a>
+                </li>
+               
+           
+            </ul>
+               <br>
+        
+<!-- <div class="carousel menu-nav" data-flickity='{ "wrapAround": true }'>
+  <div class="carousel-cell-column">
+   <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/contour-high-waisted-scrunch-shorts-women-shorts-tlf-black-xs-753789_200x.jpg?v=1648151217">
+    <span class="el">Shorts</span>
+  </div>
+  <div class="carousel-cell-column">
+ <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/contour-high-waisted-scrunch-leggings-women-leggings-tights-tlf-479144_200x.jpg?v=1648072052">
+    <span class="el">Leggings</span>
+  </div>
+  <div class="carousel-cell-column">
+ <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/chill-fleece-oversized-sweatpants-women-joggers-pants-tlf-smokey-gray-xs-499742_200x.jpg?v=1648059877">
+    <span class="el">Joggers & sweatpants</span>
+  </div>
+  
+ </div>
+         -->
+        
+        
+          </div>
+        </details>
+  
+    </li>
+  
+         <li>
+        
+            <details id="Details-menu-drawer-submenu-{{ forloop.index }} bottom-line">
+              <summary class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+               <a href="/collections/tops/mens">
+              Collections
+                </a>
+                 {% render 'icon-arrowFix' %}
+              </summary>
+              <div id="childlink-{{ childlink.title | escape }}" class="menu-drawer__submenu motion-reduce">
+                <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
+                   {% render 'icon-caret3' %}
+                  Back to all
+                </button>
+                
+              
+           <ul id="3" class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+       <li class="bottom-line">
+
+         <button  class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
+           <div class="woa2">Collections</div>
+                         {% render 'arrow-fix4' %}
+                          </button>       
+                      </li>
+    
+      </ul>
+              <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+                 <li>
+                    <a href="/collections/contour/womens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                      
+                      Contour
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="/collections/tempo-glo/womens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                      
+                      Tempo glo
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/collections/react-seamless/womens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                     
+                      React seamless
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/collections/womens-spring-essentials" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                      
+                      Spring essentials
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/collections/shine/womens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                      
+                     Shine
+                    </a>
+                  </li>
+                 <li>
+                    <a href="/collections/genesis/womens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                      
+                     Genesis
+                    </a>
+                  </li>
+                 <li>
+                    <a href="/collections/tempo/womens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                     
+                     Tempo 
+                    </a>
+                  </li>
+                   <li>
+                    <a href="/collections/train-n-run/womens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                     
+                     Train-n-run
+                    </a>
+                  </li>
+                   <li>
+                    <a href="/collections/essentials/womens" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                      
+                     Essentials
+                    </a>
+                  </li>
+
+                
+              </ul>
+                 <br>
+        
+<!-- <div class="carousel menu-nav" data-flickity='{ "wrapAround": true }'>
+  <div class="carousel-cell-column">
+   <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/contour-high-waisted-scrunch-leggings-women-leggings-tights-tlf-517604_200x.jpg?v=1648071866">
+  <span class="el">Contour</span>
+  </div>
+  <div class="carousel-cell-column">
+   <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/tempo-glo-high-waisted-workout-shorts-women-shorts-tlf-deep-pink-xs-467104_200x.jpg?v=1639602912">
+  <span class="el">Tempo glo</span>
+  </div>
+  <div class="carousel-cell-column">
+ <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/react-seamless-long-sleeve-crop-top-women-crop-tops-tlf-berry-heather-s-152506_200x.jpg?v=1633375671">
+  <span class="el">React seamless</span>
+  </div>
+  <div class="carousel-cell-column">
+ <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/contour-high-waisted-scrunch-shorts-women-shorts-tlf-granite-blue-xs-618854_200x.jpg?v=1648151092">
+  <span class="el">Spring essentials</span>
+  </div>
+  <div class="carousel-cell-column">
+<img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/arctic-sports-bra-20-women-sports-bras-tlf-266094_200x.jpg?v=1629974678">
+  <span class="el">Shine</span>
+  </div>
+  <div class="carousel-cell-column">
+ <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/genesis-long-sleeve-crop-top-women-crop-tops-tlf-golden-rod-xs-244143_200x.jpg?v=1624327886">
+  <span class="el">Genesis</span>
+  </div>
+   <div class="carousel-cell-column">
+ <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/tempo-workout-sports-bra-women-sports-bras-tlf-wine-xs-252656_200x.jpg?v=1615853114">
+  <span class="el">Tempo</span>
+  </div>
+   <div class="carousel-cell-column">
+ <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/train-n-run-short-sleeve-crop-top-women-crop-tops-tlf-black-xs-932188_200x.jpg?v=1627425774">
+  <span class="el">Train-n-run</span>
+  </div>
+   <div class="carousel-cell-column">
+ <img class="css-1q0mskh" src="https://cdn.shopify.com/s/files/1/2665/0346/products/chill-fleece-oversized-crop-sweatshirt-women-hoodies-sweatshirts-jackets-tlf-smokey-gray-xs-283050_200x.jpg?v=1648049348">
+  <span class="el">Essentials</span>
+  </div>
+</div>
+         -->
+        
+        
+            </div>
+          </details>
+    
+      </li>
+   
+  
+
+
+
+      
+      </ul>
+    </div>
+  </div>
+</details>
+</li>
+
+                  
+   </nav>
+                <div class="extra-items">
+                
+                    <a class="a" href="/account/login?return_url=%2Faccount">
+                  {% render 'profile-icon' %}
+
+                      Sign In
+                    </a>
+               
+                
+               
+                    <a class="a" href="/pages/rewards" >
+                  {% render 'reward-icon' %}
+
+                     Rewards
+                    </a>
+      
+             
+                    <a class="a" href="/pages/about-tlf-apparel" >
+                  {% render 'logo-icon' %}
+
+                      About us
+                    </a>
+                
+                    <a class="a" href="/pages/tlf-careers" >
+                  {% render 'career-icon' %}
+
+                      Careers
+                    </a>
+                
+                    <a class="a" href="/a/returns" >
+                  {% render 'shipping-icon' %}
+
+                     Shipping & Returns
+                    </a>
+                
+                    <a class="a" href="/hc/en-us" >
+                  {% render 'help-icon' %}
+
+                     Help Center
+                    </a>
+
+          <noscript>
+            {%- form 'localization', id: 'FooterCountryFormNoScript', class: 'localization-form' -%}
+              <div class="localization-form__select">
+                <h2 class="visually-hidden" id="FooterCountryLabelNoScript">{{ 'localization.country_label' | t }}</h2>
+                <select class="localization-selector link" name="country_code" aria-labelledby="FooterCountryLabelNoScript">
+                  {%- for country in localization.available_countries -%}
+                    <option value="{{ country.iso_code }}" {%- if country.iso_code == localization.country.iso_code %} selected{% endif %}>
+                                {% render 'flag-icon' %}
+                            {{ country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})
+                    </option>
+                  {%- endfor -%}
+                </select>
+              
+                {% render 'icon-caret2' %}
+              </div>
+              <button class="button button--tertiary">{{ 'localization.update_country' | t }}</button>
+            {%- endform -%}
+          </noscript>
+          <localization-form>
+            {%- form 'localization', id: 'FooterCountryForm', class: 'localization-form' -%}
+              <div class="no-js-hidden">
+                <div class="disclosure">
+                  <button type="button" class="disclosure__button localization-form__select localization-selector link link--text caption-large" aria-expanded="false" aria-controls="FooterCountryList" aria-describedby="FooterCountryLabel">
+                   {% render 'flag-icon' %}
+
+                    {{ localization.country.name }} ({{ localization.country.currency.iso_code }} {{ localization.country.currency.symbol }})
+
+                    {% render 'icon-caret2' %}
+                  </button>
+                  <ul id="FooterCountryList" role="list" class="disclosure__list list-unstyled" hidden>
+                    {%- for country in localization.available_countries -%}
+                      <li class="disclosure__item" tabindex="-1">
+                        <a class="link link--text disclosure__link caption-large{% if country.iso_code == localization.country.iso_code %} disclosure__link--active{% endif %} focus-inset" href="#"{% if country.iso_code == localization.country.iso_code %} aria-current="true"{% endif %} data-value="{{ country.iso_code }}">
+                          {{ country.name }} <span class="localization-form__currency">({{ country.currency.iso_code }} {{ country.currency.symbol }})</span>
+                        </a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                </div>
+                <input type="hidden" name="country_code" value="{{ localization.country.iso_code }}">
+              </div>
+            {%- endform -%}
+          </localization-form>
+                  
+                  
+                 </div>
+                 
+                 
+          </div>
+        </details>
+      </header-drawer>
+    {%- endif -%}
+
+    {%- if section.settings.logo_position == 'top-center' or section.settings.menu == blank -%}
+      <details-modal class="header__search">
+        <details>
+          <summary class="header__icon header__icon--search header__icon--summary link link--text focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
+            <span>
+              <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+                <use href="#icon-search">
+              </svg>
+              <svg class="modal__toggle-close icon icon-close" aria-hidden="true" focusable="false" role="presentation">
+                <use href="#icon-close">
+              </svg>
+            </span>
+          </summary>
+          <div class="search-modal modal__content" role="dialog" aria-modal="true" aria-label="{{ 'general.search.search' | t }}">
+            <div class="search-modal__content" tabindex="-1">
+              <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
+                <div class="field">
+                  <input class="search__input field__input" id="Search-In-Modal" type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ 'general.search.search' | t }}">
+                  <label class="field__label" for="Search-In-Modal">{{ 'general.search.search' | t }}</label>
+                  <input type="hidden" name="options[prefix]" value="last">
+                  <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
+                    <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+                      <use href="#icon-search">
+                    </svg>
+                  </button>
+                </div>
+              </form>
+              <button type="button" class="modal__close-button link link--text focus-inset" aria-label="{{ 'accessibility.close' | t }}">
+                <svg class="icon icon-close" aria-hidden="true" focusable="false" role="presentation">
+                  <use href="#icon-close">
+                </svg>
+              </button>
+            </div>
+          </div>
+        </details>
+      </details-modal>
+    {%- endif -%}
+
+    {%- if request.page_type == 'index' -%}
+      <h1 class="header__heading">
+    {%- endif -%}
+        <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+          {%- if section.settings.logo != blank -%}
+            {%- assign image_size = section.settings.logo_width | append: 'x' -%}
+            <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
+              src="{{ section.settings.logo | img_url: image_size }}"
+              loading="lazy"
+              class="header__heading-logo"
+              width="{{ section.settings.logo.width }}"
+              height="{{ section.settings.logo.height }}"
+              alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
+            >
+          {%- else -%}
+            <span class="h2">{{ shop.name }}</span>
+          {%- endif -%}
+        </a>
+    {%- if request.page_type == 'index' -%}
+      </h1>
+    {%- endif -%}
+
+    {%- if section.settings.menu != blank -%}
+      <nav class="header__inline-menu">
+      {% include '21nav' %}
+      </nav>
+    {%- endif -%}
+
+    <div class="header__icons">
+      <details-modal class="header__search">
+        <details>
+          <summary class="header__icon header__icon--search header__icon--summary link link--text focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
+            <span>
+              <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+                <use href="#icon-search">
+              </svg>
+              <svg class="modal__toggle-close icon icon-close" aria-hidden="true" focusable="false" role="presentation">
+                <use href="#icon-close">
+              </svg>
+            </span>
+          </summary>
+          <div class="search-modal modal__content" role="dialog" aria-modal="true" aria-label="{{ 'general.search.search' | t }}">
+            <div class="search-modal__content" tabindex="-1">
+              <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
+                <div class="field">
+                  <input class="search__input field__input" id="Search-In-Modal" type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ 'general.search.search' | t }}">
+                  <label class="field__label" for="Search-In-Modal">{{ 'general.search.search' | t }}</label>
+                  <input type="hidden" name="options[prefix]" value="last">
+                  <button class="search__button field__button focus-inset" aria-label="{{ 'general.search.search' | t }}">
+                    <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+                      <use href="#icon-search">
+                    </svg>
+                  </button>
+                </div>
+              </form>
+              <button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset" aria-label="{{ 'accessibility.close' | t }}">
+                <svg class="icon icon-close" aria-hidden="true" focusable="false" role="presentation">
+                  <use href="#icon-close">
+                </svg>
+              </button>
+            </div>
+          </div>
+        </details>
+      </details-modal>
+              
+          <div class="header__icon wishlist" aria-haspopup="dialog" aria-label="wishlist">
+            <span>
+              {% render 'icon-heart-header' %}
+            </span>
+          </div>
+
+{%- if shop.customer_accounts_enabled -%}
+        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
+          {% render 'icon-account' %}
+          <span class="visually-hidden">
+            {%- liquid
+              if customer
+                echo 'customer.account_fallback' | t
+              else
+                echo 'customer.log_in' | t
+              endif
+            -%}
+          </span>
+        </a>
+      {%- endif -%}
+
+      {%- include "go-cart-button" -%}
+      
+    </div>
+  </header>
+</{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
+
+{%- if request.page_type != 'cart' -%}
+  {%- render 'cart-notification' -%}
+{%- endif -%}
+        
+        
+
+
+{% javascript %}
+        
+        
+        
+  class StickyHeader extends HTMLElement {
+    constructor() {
+      super();
+    }
+
+    connectedCallback() {
+      this.header = document.getElementById('shopify-section-header');
+      this.headerBounds = {};
+      this.currentScrollTop = 0;
+
+      this.onScrollHandler = this.onScroll.bind(this);
+
+      window.addEventListener('scroll', this.onScrollHandler, false);
+
+      this.createObserver();
+    }
+
+    disconnectedCallback() {
+      window.removeEventListener('scroll', this.onScrollHandler);
+    }
+
+    createObserver() {
+      let observer = new IntersectionObserver((entries, observer) => {
+        this.headerBounds = entries[0].intersectionRect;
+        observer.disconnect();
+      });
+
+      observer.observe(this.header);
+    }
+
+    onScroll() {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
+        requestAnimationFrame(this.hide.bind(this));
+      } else if (scrollTop < this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
+        requestAnimationFrame(this.reveal.bind(this));
+      } else if (scrollTop <= this.headerBounds.top) {
+        requestAnimationFrame(this.reset.bind(this));
+      }
+
+      this.currentScrollTop = scrollTop;
+    }
+
+    hide() {
+      this.header.classList.add('shopify-section-header-hidden', 'shopify-section-header-sticky');
+      this.closeMenuDisclosure();
+      this.closeSearchModal();
+    }
+
+    reveal() {
+      this.header.classList.add('shopify-section-header-sticky', 'animate');
+      this.header.classList.remove('shopify-section-header-hidden');
+    }
+
+    reset() {
+      this.header.classList.remove('shopify-section-header-hidden', 'shopify-section-header-sticky', 'animate');
+    }
+
+    closeMenuDisclosure() {
+      this.disclosures = this.disclosures || this.header.querySelectorAll('details-disclosure');
+      this.disclosures.forEach(disclosure => disclosure.close());
+    }
+
+    closeSearchModal() {
+      this.searchModal = this.searchModal || this.header.querySelector('details-modal');
+      this.searchModal.close(false);
+    }
+  }
+
+  customElements.define('sticky-header', StickyHeader);
+{% endjavascript %}
+        
+       
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": {{ shop.name | json }},
+    {% if section.settings.logo %}
+      {% assign image_size = section.settings.logo.width | append: 'x' %}
+      "logo": {{ section.settings.logo | img_url: image_size | prepend: "https:" | json }},
+    {% endif %}
+    "sameAs": [
+      {{ settings.social_twitter_link | json }},
+      {{ settings.social_facebook_link | json }},
+      {{ settings.social_pinterest_link | json }},
+      {{ settings.social_instagram_link | json }},
+      {{ settings.social_tumblr_link | json }},
+      {{ settings.social_snapchat_link | json }},
+      {{ settings.social_youtube_link | json }},
+      {{ settings.social_vimeo_link | json }}
+    ],
+    "url": {{ shop.url | append: page.url | json }}
+  }
+</script>
+
+{%- if request.page_type == 'index' -%}
+  {% assign potential_action_target = shop.url | append: routes.search_url | append: "?q={search_term_string}" %}
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": {{ shop.name | json }},
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {{ potential_action_target | json }},
+        "query-input": "required name=search_term_string"
+      },
+      "url": {{ shop.url | append: page.url | json }}
+    }
+  </script>
+{%- endif -%}
+        
+ <style>
+  
+  .new-close-wrapper .icon-close {
+    margin-left: 18em!important;
+
+    margin: 21px;
+    width: 20px;
+  }
+</style>
+<script>
+const newCloseIcon = document.querySelector('.new-close-wrapper .icon-close')
+if (newCloseIcon) {
+  newCloseIcon.addEventListener('click', function(){
+    document.querySelector('details.menu-drawer-container').removeAttribute('open')
+    document.querySelector('details.menu-drawer-container').classList.remove('menu-opening')
+    document.querySelector('.header__icon[aria-expanded]').setAttribute('aria-expanded', false);
+  });
+}
+</script>
+       
+      
+
+{% schema %}
+{
+  "name": "t:sections.header.name",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "t:sections.header.settings.logo.label"
+    },
+    {
+      "type": "range",
+      "id": "logo_width",
+      "min": 50,
+      "max": 250,
+      "step": 10,
+      "default": 100,
+      "unit": "t:sections.header.settings.logo_width.unit",
+      "label": "t:sections.header.settings.logo_width.label"
+    },
+    {
+      "type": "select",
+      "id": "logo_position",
+      "options": [
+        {
+          "value": "middle-left",
+          "label": "t:sections.header.settings.logo_position.options__1.label"
+        },
+        {
+          "value": "top-left",
+          "label": "t:sections.header.settings.logo_position.options__2.label"
+        },
+        {
+          "value": "top-center",
+          "label": "t:sections.header.settings.logo_position.options__3.label"
+        }
+      ],
+      "default": "middle-left",
+      "label": "t:sections.header.settings.logo_position.label"
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "default": "main-menu",
+      "label": "t:sections.header.settings.menu.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_line_separator",
+      "default": true,
+      "label": "t:sections.header.settings.show_line_separator.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_sticky_header",
+      "default": true,
+      "label": "t:sections.header.settings.enable_sticky_header.label",
+      "info": "t:sections.header.settings.enable_sticky_header.info"
+    }
+  ]
+}
+{% endschema %}

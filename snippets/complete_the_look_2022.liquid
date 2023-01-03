@@ -1,0 +1,198 @@
+<div id="ctl">
+<ul class="complete_the_look">
+{% comment %}   
+{% if product.tags contains 'MENS' %}
+{% assign collection = collections.all %}
+{% paginate collections.all.products by 1000 %}
+{% assign productName = product.title %}
+{% assign productKuler = product.variants.first.option1 %}
+{% for product in collection.products %}
+{% if product.title != productName and product.variants.first.option1 == productKuler and product.tags contains 'TOPS' and product.tags contains 'MENS' %}
+	<li>
+      <a href="{{ product.handle }}" target="_blank">
+    			<img src="{{ product | img_url: '205x' }}" alt="{{ product.title }} - {{ product.type }} - TLF Apparel | Take Life Further" height="auto">
+      </a>
+      <div class="ctl">
+      <a href="{{ product.handle }}" target="_blank">{{ product.title }}</a><br>
+      </div>
+  	</li>
+{% break %}
+{% endif %}
+{% endfor %}
+{% endpaginate %}
+{% endif %}
+
+{% if product.tags contains 'MENS' %}
+{% assign collection = collections.all %}
+{% paginate collections.all.products by 1000 %}
+{% assign productName = product.title %}
+{% assign productKuler = product.variants.first.option1 %}
+{% for product in collection.products %}
+{% if product.title != productName and product.variants.first.option1 == productKuler and product.tags contains 'BOTTOMS' and product.tags contains 'MENS' %}
+	<li>
+  	  <a href="{{ product.handle }}" target="_blank">
+    			<img src="{{ product | img_url: '205x' }}" alt="{{ product.title }} - {{ product.type }} - TLF Apparel | Take Life Further" height="auto">
+      </a>
+      <div class="ctl">
+      <a href="{{ product.handle }}" target="_blank">{{ product.title }}</a><br>
+      </div>
+  	</li>
+{% break %}
+{% endif %}
+{% endfor %}
+{% endpaginate %}
+{% endif %}
+
+  
+{% if product.tags contains 'WOMENS' %}
+{% assign collection = collections.all %}
+{% paginate collections.all.products by 1000 %}
+{% assign productName = product.title %}
+{% assign productKuler = product.variants.first.option1 %}
+{% for product in collection.products %}
+{% if product.title != productName and product.variants.first.option1 == productKuler and product.tags contains 'TOPS' and product.tags contains 'WOMENS' %}
+	<li>
+      <a href="{{ product.handle }}" target="_blank">
+    			<img src="{{ product | img_url: '125x' }}" alt="{{ product.title }} - {{ product.type }} - TLF Apparel | Take Life Further" height="auto">
+      </a>
+      <div class="ctl">
+      <a href="{{ product.handle }}" target="_blank">{{ product.title }}</a><br>
+      </div>
+  	</li>
+{% break %}
+{% endif %}
+{% endfor %}
+{% endpaginate %}
+{% endif %}
+
+{% if product.tags contains 'WOMENS' %}
+{% assign collection = collections.all %}
+{% paginate collections.all.products by 1000 %}
+{% assign productName = product.title %}
+{% assign productKuler = product.variants.first.option1 %}
+{% for product in collection.products %}
+{% if product.title != productName and product.variants.first.option1 == productKuler and product.tags contains 'BOTTOMS' and product.tags contains 'WOMENS' %}
+	<li>
+      <a href="{{ product.handle }}" target="_blank">
+    			<img src="{{ product | img_url: '125x' }}" alt="{{ product.title }} - {{ product.type }} - TLF Apparel | Take Life Further" height="auto">
+      </a>
+      <div class="ctl">
+      <a href="{{ product.handle }}" target="_blank" class="ctl-title">{{ product.title }}</a><br>
+  </div>
+  	</li>
+{% break %}
+{% endif %}
+{% endfor %}
+{% endpaginate %}
+{% endif %}
+   {% endcomment %}
+</ul>
+</div>
+
+<style>
+  @media only screen and (min-width: 989px) {
+    ul.complete_the_look li {
+    list-style: none;
+    display: flex;
+    padding-top: 0.85em;
+    width: 205px;
+    flex-direction: column;
+}
+ul.complete_the_look {
+    padding-left: 0 !important;
+    margin: 0;
+    display: inline-flex;
+    padding-bottom: 1em;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+      width: 420px;
+}
+  }
+    @media only screen and (max-width: 990px) {
+      .ctl {
+    padding-left: 20px;
+    width: 50%;
+}
+          #ctl {
+    overflow: scroll;
+    overflow-y: hidden;
+}
+      ul.complete_the_look li {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 0.85em;
+    position: relative;
+    min-width: 366px;
+}
+    ul.complete_the_look {
+    padding-left: 0 !important;
+    margin: 0;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1em;
+}
+    }
+  @media screen and (min-width:400px) and (max-width:1399px){
+  h2.h4.accordion__title.complete_the_look {
+    padding: 2.95rem 0 0!important;
+}
+  }
+  span.ctl-color, #ctl span.money {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.875em;
+}
+      #ctl {
+    margin-top: 0.25em;
+}
+ul.complete_the_look img {
+    width: 200px;
+}
+  h2.h4.accordion__title.complete_the_look {
+    padding: 1.7rem 0 0;
+}
+ul.complete_the_look li span {
+    margin-top: 1.25rem;
+    display: inline-block;
+    line-height: 16px;
+}
+.ctl a {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 0.875em;
+}
+#ctl span.money {
+    color: #868686;
+}
+#ctl btn {
+    background-color: #2e2e2e;
+    color: white!important;
+    padding: 18px 32px;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 60px;
+    display: block;
+    text-align: center;
+    line-height: 1em;
+    position: absolute;
+    font-size: 1em;
+    bottom: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.product__accordion .accordion__content a.ctl-title {
+    font-family: 'Poppins', sans-serif;
+}
+#ctl::-webkit-scrollbar-thumb {
+    background-color: #868686;
+}
+
+#ctl::-webkit-scrollbar {
+    height: 4px;
+}
+#ctl::-webkit-scrollbar-track {
+  background-color: #dbdbdb;
+}
+</style>
